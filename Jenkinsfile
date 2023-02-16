@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Init'){
             steps {
-                sh "docker rm -f $(docker ps -qa)"
+                sh "docker rm -f mywebapp"
             }
         }
         stage('Build'){
